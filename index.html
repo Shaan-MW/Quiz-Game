@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen active" id="start-screen">
+            <h1 class="quiz-heading">Quiz Time!</h1>
+            <p>Test your knowledge with these fun questions</p>
+            <button class="start-btn">Start Quiz</button>
+        </div>
+        
+        <div class="screen quiz-screen Inactive" id="quiz-screen">
+            <div class="quiz_header">
+                <h2 class="question-text">Question Goes Here....</h2>
+                <div class="quiz-info">
+                    <p>Question <span class="currentQuestion"></span> of <span class="noOfQuestions">5</span></p>
+                    <p>Score: <span class="score">0</span></p>
+                </div>
+            </div>
+
+            <div class="answers_set">
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress" class="progress"></div>
+            </div>
+
+        </div>
+
+        <div class="screen result-screen Inactive" id="result-screen">
+            <h1>Quiz Results</h1>
+            <p>You scored <span>0</span> out of <span>5</span></p>
+            <h2 class="results-text">Padida Parama </h2>
+            <button class="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
