@@ -150,11 +150,18 @@
 #result-screen .restart-btn{
     width: 170px;
     height:50px ;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #ff4d00;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     color: white;
     font-size: 17px;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+
+#result-screen .restart-btn:hover{
+    width: 174px;
 }
 
 

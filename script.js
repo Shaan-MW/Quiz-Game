@@ -17,6 +17,7 @@ const questionText = document.querySelector('.question-text');
 const answerSetDiv = document.querySelector('.answers_set');
 
 const progress = document.querySelector('.progress');
+const resultsText = document.querySelector('.results-text');
 
 const quiz = [
   {
@@ -344,6 +345,36 @@ function showResult() {
   const totalText = resultScreen.querySelectorAll("p span")[1];
   scoreText.textContent = score;
   totalText.textContent = quiz.length;
+
+  switch(score){
+    case 6:
+      resultsText.textContent = "Excellent, You're a Genius.";
+      break;
+    case 5:
+      resultsText.textContent = "Great Try, Try harder.";
+      break;
+    case 4:
+      resultsText.textContent = "Good, Keep it up."
+      break;
+    case 3:
+      resultsText.textContent = "Satisfactory.";
+      break;
+    case 2:
+      resultsText.textContent = "Needs Improve.";
+      break;
+    case 1:
+    case 0:
+      resultsText.textContent = "Poor, Study more."
+      break;
+    default:
+      resultsText.textContent = "Restart Quiz.";
+      break;
+
+
+  }
+
+
+
 }
 
 
