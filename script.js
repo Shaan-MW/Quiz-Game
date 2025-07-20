@@ -79,6 +79,16 @@ const quiz = [
       d: "Austen"
     },
     correct: "Shakespeare"
+  },
+    {
+    question: "Who wrote 'Romeo and Juliet'?",
+    choices: {
+      a: "Shakespeare",
+      b: "Hemingway",
+      c: "Twain",
+      d: "Austen"
+    },
+    correct: "Shakespeare"
   }
 ];
 
