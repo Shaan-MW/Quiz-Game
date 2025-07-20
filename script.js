@@ -266,20 +266,14 @@ function showQuestion() {
     btn.innerText = quiz[currentQuesition].choices[key];
     btn.className = "answer-btn";
     btn.setAttribute("data-key", key);
-
     // 👇 Event listener inside loop
     btn.addEventListener("click", function () {
       handleAnswer(btn);
     });
-
     answerSetDiv.appendChild(btn);
   }
-
   currentQuesitionTag.textContent = currentQuesition + 1;
 }
-
-
-
 //new 
 /*
 function handleAnswer(button) {
@@ -379,17 +373,8 @@ function showResult() {
     default:
       resultsText.textContent = "Restart Quiz.";
       break;
-
-
   }
-
-
-
 }
-
-
-
-
 
 function restartQuiz(){
   resultScreen.classList.remove('active');
